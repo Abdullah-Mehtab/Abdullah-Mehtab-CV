@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('back.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures the image stays in place while scrolling */
+    min-height: 100vh; /* Ensures it covers the full viewport height */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: -1; /* Sends the background to the back */
+    color: #fff; /* Ensure text is white for contrast */
+}
+
+/* Ensure content is above the background image */
+.container, .navbar, footer {
+    position: relative;
+    z-index: 1;
+    color: white; /* Ensures text is readable over the background */
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+}
+
+/* Adjusting padding to make space for the content and avoid hiding the background */
+.container {
+    padding-top: 50px;
+    color: white;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    animation: bounce 2s infinite;
+}
+
+/* For project cards and sections */
+.project-card {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque so the background is visible */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: black;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.7); /* Darken cards slightly for better visibility */
+    border: none; /* Remove borders for a cleaner look */
+}
+
+.btn-primary {
+    border-radius: 20px; /* Make buttons more rounded */
+}
+
+/* Footer adjustments */
+footer {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    position: relative; /* Ensure footer is always at the bottom of the page */
+}
+
+/* Bouncing animation for profile image */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 256x) {
+    .logo-img {
+        width: 10px;
+    }
+    .profile-img {
+        width: 30px;
+        height: 30px;
+    }
+}
