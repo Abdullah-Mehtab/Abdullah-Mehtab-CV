@@ -15,7 +15,7 @@
             <a class="navbar-brand" href="index.html">
                 <img src="logo.png" alt="Logo" style="width: 50px; height: 50px;"> Abdullah Mehtab
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -34,125 +34,42 @@
         <h1 class="text-center">My Projects</h1>
         <div class="row mt-4">
             
-            <!-- Project 1 -->
-            <div class="col-md-4">
-                <div class="card mb-4 text-white" style="background-image: url('Bg2.jpg'); background-size: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Small Scale Search Engine (DSA)</h5>
-                        <p class="card-text">A project focused on creating a basic search engine utilizing data structures and algorithms to optimize search efficiency, providing a hands-on experience in algorithm design.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 2 -->
-            <div class="col-md-4">
-                <div class="card mb-4 text-white" style="background-image: url('Bg2.jpg'); background-size: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Linear Regression ML in Assembly</h5>
-                        <p class="card-text">An innovative project where I trained a linear regression model using Assembly language, offering insights into low-level programming and its applications in machine learning.</p>
-                    </div>
-                </div>
-            </div>
+            <!-- Project Cards -->
+            <script>
+                const projects = [
+                    { title: "Integrated Security System (Wazuh & ELK Stack on Raspberry Pi)", description: "Final Year Project (In Progress)", link: "" },
+                    { title: "Smart LED On-Time Monitoring System", description: "An ESP32-based system that logs LED usage times into Google Sheets via a WebApp.", link: "https://github.com/Abdullah-Mehtab/Smart-LED-On-Time-Monitoring-System" },
+                    { title: "Small Scale Search Engine", description: "Developed a simple search engine using Data Structures & Algorithms for optimized search operations.", link: "https://github.com/Abdullah-Mehtab/Search-Engine-Using-DSA" },
+                    { title: "AI-Powered University Admissions Chatbot", description: "A chatbot built using Python that assists students with university admissions-related queries.", link: "https://github.com/Abdullah-Mehtab/AI-Powered-University-Admissions-Chatbot" },
+                    { title: "Cab/Taxi-Management-System", description: "A Tkinter-based management system with authentication and logging capabilities.", link: "https://github.com/Abdullah-Mehtab/Begginer-Taxi-Management-System-unusable-/tree/main" },
+                    { title: "Linear Regression ML in Assembly", description: "Implemented a basic Linear Regression model using MIPS Assembly, integrating low-level computing with ML.", link: "https://github.com/Abdullah-Mehtab/Linear-Regression-in-Assembly" },
+                    { title: "Ludo Game GUI", description: "A complete Ludo board game developed using Python's Pygame library.", link: "https://github.com/Abdullah-Mehtab/Ludo-in-Python" },
+                    { title: "Facial Image Recognition", description: "Built a facial recognition system using TensorFlow for improved identity verification.", link: "https://github.com/Abdullah-Mehtab/Image-Recognition-Tensorflow-/tree/main" },
+                    { title: "Space Invaders Game GUI", description: "A Java Swing-based Space Invaders game implementing smooth GUI and game mechanics.", link: "https://github.com/Abdullah-Mehtab/Space-Invaders" },
+                    { title: "Gol-Gappay Stall Management System", description: "An SQL-based management system for a food stall, integrating structured databases for business tracking.", link: "https://github.com/Abdullah-Mehtab/Gol-Gappay-SMS/tree/main" },
+                    { title: "Line-Following Mini-Robot", description: "Designed and built a hardware-based line-following robot car with embedded systems.", link: "" },
+                    { title: "Bluetooth Controlled Car", description: "An Arduino-powered car that can be controlled via Bluetooth using a smartphone.", link: "https://github.com/Abdullah-Mehtab/Bluetooth-Controlled-Car-Arduino-/tree/main" },
+                    { title: "2048 Game", description: "Developed the classic 2048 puzzle game using C++, with optimized tile movement mechanics.", link: "https://github.com/Abdullah-Mehtab/2048-Game/tree/main" },
+                    { title: "Expression Parser Compiler", description: "A compiler built in C that parses and evaluates mathematical expressions.", link: "https://github.com/Abdullah-Mehtab/Expression-Parser-Compiler-Construction" },
+                    { title: "Task Management Web Application", description: "A simple task management web app using HTML, CSS, and JavaScript.", link: "https://github.com/Abdullah-Mehtab/Web-Dev-Project" }
+                ];
 
-            <!-- Project 3 -->
-            <div class="col-md-4">
-                <div class="card mb-4 text-white" style="background-image: url('Bg2.jpg'); background-size: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Cab/Taxi-Management-System (Tkinter)</h5>
-                        <p class="card-text">Developed a comprehensive management system using Python's Tkinter for GUI, featuring user authentication, logging, and integration with operating system functionalities for improved usability.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="col-md-4">
-                <div class="card mb-4 text-white" style="background-image: url('Bg2.jpg'); background-size: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Image Recognition (TensorFlow)</h5>
-                        <p class="card-text">Executed an image processing project employing TensorFlow for image detection, focusing on model training and enhancing accuracy through iterative testing and data augmentation techniques.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="col-md-4">
-                <div class="card mb-4 text-white" style="background-image: url('Bg2.jpg'); background-size: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Space Invaders Game (Swing)</h5>
-                        <p class="card-text">Created a Java-based GUI game replicating the classic Space Invaders, allowing me to deepen my understanding of game mechanics and event-driven programming.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="col-md-4">
-                <div class="card mb-4 text-white" style="background-image: url('Bg2.jpg'); background-size: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Ludo Game GUI (Pygame)</h5>
-                        <p class="card-text">Designed and developed a GUI-based Ludo game using Pygame, enhancing my skills in game development and graphical interface design through interactive features.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 7 -->
-            <div class="col-md-4">
-                <div class="card mb-4 text-white" style="background-image: url('Bg2.jpg'); background-size: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Gol-Gappay Stall Management System (SQL)</h5>
-                        <p class="card-text">Implemented a database management system using SQL, incorporating ERD design and query execution, facilitating effective management of business operations.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 8 -->
-            <div class="col-md-4">
-                <div class="card mb-4 text-white" style="background-image: url('Bg2.jpg'); background-size: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">To-Do List Website (Offline)</h5>
-                        <p class="card-text">Developed a self-contained offline web application for task management, allowing users to efficiently track and organize daily activities through a simple and intuitive interface.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 9 -->
-            <div class="col-md-4">
-                <div class="card mb-4 text-white" style="background-image: url('Bg2.jpg'); background-size: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Line-Following Mini-Robot (Car)</h5>
-                        <p class="card-text">Designed and built a line-following mini-robot car, integrating hardware components and digital logic design principles for successful operation in real-world scenarios.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 10 -->
-            <div class="col-md-4">
-                <div class="card mb-4 text-white" style="background-image: url('Bg2.jpg'); background-size: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">2048 Game (C++)</h5>
-                        <p class="card-text">Created a console-based version of the popular 2048 game in C++, featuring real-time score tracking and gameplay mechanics that challenge user strategy and decision-making.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 11 -->
-            <div class="col-md-4">
-                <div class="card mb-4 text-white" style="background-image: url('Bg2.jpg'); background-size: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Bluetooth Controlled Car (Arduino)</h5>
-                        <p class="card-text">A project focused on networking, utilizing Arduino to create a Bluetooth-controlled car, enhancing skills in embedded systems and wireless communication.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 12 -->
-            <div class="col-md-4">
-                <div class="card mb-4 text-white" style="background-image: url('Bg2.jpg'); background-size: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Expression Parser Compiler (C)</h5>
-                        <p class="card-text">Developed a compiler capable of lexical and semantic analysis through parsers in C, showcasing skills in data structures and algorithmic efficiency through stack implementation.</p>
-                    </div>
-                </div>
-            </div>
+                document.write('<div class="row">');
+                projects.forEach(proj => {
+                    document.write(`
+                        <div class="col-md-4">
+                            <div class="card mb-4 text-white" style="background-image: url('Bg2.jpg'); background-size: cover;">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">${proj.title}</h5>
+                                    <p class="card-text">${proj.description}</p>
+                                    ${proj.link ? `<a href="${proj.link}" class="btn btn-primary mt-3" target="_blank">View on GitHub</a>` : `<span class="badge bg-secondary mt-3">In Progress</span>`}
+                                </div>
+                            </div>
+                        </div>
+                    `);
+                });
+                document.write('</div>');
+            </script>
         </div>
     </div>
 
