@@ -47,7 +47,7 @@
                     { title: "Facial Image Recognition", description: "Built a facial recognition system using TensorFlow for improved identity verification.", link: "https://github.com/Abdullah-Mehtab/Image-Recognition-Tensorflow-/tree/main" },
                     { title: "Space Invaders Game GUI", description: "A Java Swing-based Space Invaders game implementing smooth GUI and game mechanics.", link: "https://github.com/Abdullah-Mehtab/Space-Invaders" },
                     { title: "Gol-Gappay Stall Management System", description: "An SQL-based management system for a food stall, integrating structured databases for business tracking.", link: "https://github.com/Abdullah-Mehtab/Gol-Gappay-SMS/tree/main" },
-                    { title: "Line-Following Mini-Robot", description: "Designed and built a hardware-based line-following robot car with embedded systems.", link: "" },
+                    { title: "Line-Following Mini-Robot", description: "Designed and built a hardware-based line-following robot car with embedded systems.", link: null },
                     { title: "Bluetooth Controlled Car", description: "An Arduino-powered car that can be controlled via Bluetooth using a smartphone.", link: "https://github.com/Abdullah-Mehtab/Bluetooth-Controlled-Car-Arduino-/tree/main" },
                     { title: "2048 Game", description: "Developed the classic 2048 puzzle game using C++, with optimized tile movement mechanics.", link: "https://github.com/Abdullah-Mehtab/2048-Game/tree/main" },
                     { title: "Expression Parser Compiler", description: "A compiler built in C that parses and evaluates mathematical expressions.", link: "https://github.com/Abdullah-Mehtab/Expression-Parser-Compiler-Construction" },
@@ -62,7 +62,7 @@
                                 <div class="card-body text-center">
                                     <h5 class="card-title">${proj.title}</h5>
                                     <p class="card-text">${proj.description}</p>
-                                    ${proj.link ? `<a href="${proj.link}" class="btn btn-primary mt-3" target="_blank">View on GitHub</a>` : `<span class="badge bg-secondary mt-3">In Progress</span>`}
+                                    ${proj.link ? `<a href="${proj.link}" class="btn btn-primary mt-3" target="_blank">View on GitHub</a>` : (proj.link === null ? `<span class="badge bg-warning mt-3">No GitHub Available</span>` : `<span class="badge bg-secondary mt-3">In Progress</span>`)}
                                 </div>
                             </div>
                         </div>
